@@ -1,0 +1,46 @@
+{
+  "app": {
+    "sites" :[
+      "https://threejs.org/examples/#webgl_animation_cloth",
+      "https://threejs.org/examples/?q=shado#webgl_shadowmap_performance",
+      "https://codepen.io/",
+      "https://tympanus.net/Tutorials/TheAviator/",
+      "https://gl-transitions.com/"
+    ]
+  },
+  "durations": {
+    "intervalRotation": 10000
+  },
+  "exit":{
+    "onUncaughtException": true,
+    "onUnhandledRejection": true
+  },
+  "window" : {
+    "width": 1920,
+    "height": 1080,
+    "kiosk": true,
+    "autoHideMenuBar": true,
+    "webPreferences": {
+      "plugins": true,
+      "directWrite": true,
+      "webSecurity": false,
+      "experimentalFeatures": false,
+      "experimentalCanvasFeatures": false,
+      "allowRunningInsecureContent": true,
+      "allowDisplayingInsecureContent": true
+    }
+  },
+  "appendSwitch": {
+    "--disable-pinch": "",
+    "--disable-touch-adjustment": "",
+    "--touch-events": ""
+  },
+  "serviceWorker": {
+    "enable": true,
+    "cacheFirst": false
+  },
+  "appendArgument": [
+    "--overscroll-history-navigation=0",
+    "--ignore-gpu-blacklist"
+  ]
+}

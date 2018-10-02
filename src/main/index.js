@@ -57,6 +57,11 @@ function createWindow () {
     console.log('ERROR 63 - Webcontent destroyed, let\'s quit')
     app.quit()
   })
+  mainWindow.webContents.session.clearCache(()=>{
+    console.log('cache cleared.')
+  })
+  // mainWindow.webContents.session.clearStorageData()
+  // mainWindow.webContents.clearHistory()
 }
 
 global.settings = require('standard-settings').getSettings()
